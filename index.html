@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Visionary BikeSecurity - Sensores de Proximidad para Bicicletas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-bicycle"></i>
+                    </div>
+                    <span class="logo-text">The Visionary BikeSecurity</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#about" class="nav-link">Acerca de</a>
+                    <a href="#team" class="nav-link">Equipo</a>
+                    <a href="#project" class="nav-link">Proyecto</a>
+                    <a href="#gallery" class="nav-link">Galería</a>
+                    <a href="#contact" class="nav-btn">Contacto</a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="nav-mobile" id="mobile-menu">
+                <a href="#about" class="nav-link-mobile" onclick="closeMobileMenu()">Acerca de</a>
+                <a href="#team" class="nav-link-mobile" onclick="closeMobileMenu()">Equipo</a>
+                <a href="#project" class="nav-link-mobile" onclick="closeMobileMenu()">Proyecto</a>
+                <a href="#gallery" class="nav-link-mobile" onclick="closeMobileMenu()">Galería</a>
+                <a href="#contact" class="nav-btn-mobile" onclick="closeMobileMenu()">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Sensores de Proximidad <br>
+                    <span class="hero-highlight">para Bicicletas</span>
+                </h1>
+                <p class="hero-description">
+                    Revolucionamos la seguridad ciclística con tecnología avanzada de detección. 
+                    Nuestros sensores alertan sobre vehículos cercanos, mejorando la seguridad en cada viaje.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#project" class="btn-primary">Conocer Proyecto</a>
+                    <a href="#contact" class="btn-secondary">Contactar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Acerca de The Visionary BikeSecurity</h2>
+                <p class="section-subtitle">
+                    Somos pioneros en el desarrollo de tecnología de seguridad para ciclistas urbanos
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-title">Nuestra Misión</h3>
+                    <p class="about-paragraph">
+                        En The Visionary BikeSecurity, nos dedicamos a crear soluciones tecnológicas innovadoras que mejoren 
+                        la seguridad de los ciclistas en entornos urbanos. Creemos que la movilidad sostenible debe 
+                        ser segura y accesible para todos.
+                    </p>
+                    <p class="about-paragraph">
+                        Nuestro sistema de sensores de proximidad representa un avance significativo en la prevención 
+                        de accidentes, utilizando tecnología de vanguardia para detectar vehículos cercanos y alertar 
+                        al ciclista en tiempo real.
+                    </p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon security">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4 class="feature-title">Seguridad</h4>
+                                <p class="feature-description">Protección avanzada</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon innovation">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4 class="feature-title">Innovación</h4>
+                                <p class="feature-description">Tecnología de punta</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stats-card">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h4 class="stat-number">500+</h4>
+                            <p class="stat-label">Ciclistas protegidos</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4 class="stat-number">95%</h4>
+                            <p class="stat-label">Precisión de detección</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4 class="stat-number">24/7</h4>
+                            <p class="stat-label">Monitoreo continuo</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4 class="stat-number">3 Años</h4>
+                            <p class="stat-label">Experiencia en I+D</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestro Equipo</h2>
+                <p class="section-subtitle">
+                    Profesionales apasionados por la tecnología y la seguridad vial
+                </p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" 
+                         alt="Alex Rodriguez" class="team-photo">
+                    <h3 class="team-name">Alex Rodriguez</h3>
+                    <p class="team-role">CEO & Fundador</p>
+                    <p class="team-description">Ingeniero en electrónica con 10 años de experiencia en IoT</p>
+                </div>
+                
+                <div class="team-card">
+                    <img src="https://images.pexels.com/photos/3727463/pexels-photo-3727463.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" 
+                         alt="Maria Santos" class="team-photo">
+                    <h3 class="team-name">Maria Santos</h3>
+                    <p class="team-role">CTO</p>
+                    <p class="team-description">Especialista en desarrollo de software y sistemas embebidos</p>
+                </div>
+                
+                <div class="team-card">
+                    <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" 
+                         alt="Carlos Mendoza" class="team-photo">
+                    <h3 class="team-name">Carlos Mendoza</h3>
+                    <p class="team-role">Ingeniero de Hardware</p>
+                    <p class="team-description">Experto en diseño de circuitos y sensores de alta precisión</p>
+                </div>
+                
+                <div class="team-card">
+                    <img src="https://images.pexels.com/photos/3727464/pexels-photo-3727464.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" 
+                         alt="Sofia Chen" class="team-photo">
+                    <h3 class="team-name">Sofia Chen</h3>
+                    <p class="team-role">Diseñadora UX/UI</p>
+                    <p class="team-description">Especialista en experiencia de usuario para aplicaciones móviles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Description Section -->
+    <section id="project" class="project">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestro Proyecto</h2>
+                <p class="section-subtitle">
+                    Sistema inteligente de detección de proximidad para bicicletas urbanas
+                </p>
+            </div>
+            
+            <div class="project-content">
+                <div class="project-description">
+                    <h3 class="project-title">Descripción del Sistema</h3>
+                    <p class="project-paragraph">
+                        Nuestro sistema revolucionario combina sensores ultrasónicos de alta precisión con inteligencia 
+                        artificial para detectar vehículos que se aproximan por detrás del ciclista. El sistema procesa 
+                        la información en tiempo real y proporciona alertas visuales y sonoras cuando detecta un peligro potencial.
+                    </p>
+                    <p class="project-paragraph">
+                        La tecnología incluye conectividad Bluetooth para sincronización con dispositivos móviles, 
+                        permitiendo configuraciones personalizadas y registro de datos de viaje para análisis de seguridad.
+                    </p>
+                    
+                    <div class="features-list">
+                        <div class="feature-list-item">
+                            <i class="fas fa-check-circle feature-check"></i>
+                            <div class="feature-list-content">
+                                <h4 class="feature-list-title">Detección de 360°</h4>
+                                <p class="feature-list-description">Cobertura completa alrededor de la bicicleta</p>
+                            </div>
+                        </div>
+                        <div class="feature-list-item">
+                            <i class="fas fa-check-circle feature-check"></i>
+                            <div class="feature-list-content">
+                                <h4 class="feature-list-title">Alertas Personalizables</h4>
+                                <p class="feature-list-description">Configuración según preferencias del usuario</p>
+                            </div>
+                        </div>
+                        <div class="feature-list-item">
+                            <i class="fas fa-check-circle feature-check"></i>
+                            <div class="feature-list-content">
+                                <h4 class="feature-list-title">Batería de Larga Duración</h4>
+                                <p class="feature-list-description">Hasta 30 horas de uso continuo</p>
+                            </div>
+                        </div>
+                        <div class="feature-list-item">
+                            <i class="fas fa-check-circle feature-check"></i>
+                            <div class="feature-list-content">
+                                <h4 class="feature-list-title">Resistente al Clima</h4>
+                                <p class="feature-list-description">Certificación IPX7 para uso en lluvia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-specs">
+                    <h3 class="tech-title">Características Técnicas</h3>
+                    <div class="spec-list">
+                        <div class="spec-item">
+                            <span class="spec-label">Rango de detección:</span>
+                            <span class="spec-value">0.5 - 15 metros</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Tiempo de respuesta:</span>
+                            <span class="spec-value">< 50ms</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Conectividad:</span>
+                            <span class="spec-value">Bluetooth 5.0</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Peso total:</span>
+                            <span class="spec-value">180g</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Instalación:</span>
+                            <span class="spec-value">5 minutos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Galería del Proyecto</h2>
+                <p class="section-subtitle">
+                    Imágenes del desarrollo e implementación de nuestro sistema
+                </p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openModal('https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600')">
+                    <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                         alt="Sensor de proximidad instalado en bicicleta urbana">
+                    <div class="gallery-overlay">
+                        <p class="gallery-caption">Sensor de proximidad instalado en bicicleta urbana</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal('https://images.pexels.com/photos/544966/pexels-photo-544966.jpeg?auto=compress&cs=tinysrgb&w=600')">
+                    <img src="https://images.pexels.com/photos/544966/pexels-photo-544966.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                         alt="Ciclista usando nuestro sistema de seguridad">
+                    <div class="gallery-overlay">
+                        <p class="gallery-caption">Ciclista usando nuestro sistema de seguridad</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal('https://images.pexels.com/photos/163407/bike-bike-path-clouds-daylight-163407.jpeg?auto=compress&cs=tinysrgb&w=600')">
+                    <img src="https://images.pexels.com/photos/163407/bike-bike-path-clouds-daylight-163407.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                         alt="Detección automática de vehículos cercanos">
+                    <div class="gallery-overlay">
+                        <p class="gallery-caption">Detección automática de vehículos cercanos</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal('https://images.pexels.com/photos/1031698/pexels-photo-1031698.jpeg?auto=compress&cs=tinysrgb&w=600')">
+                    <img src="https://images.pexels.com/photos/1031698/pexels-photo-1031698.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                         alt="Interfaz móvil de la aplicación">
+                    <div class="gallery-overlay">
+                        <p class="gallery-caption">Interfaz móvil de la aplicación</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal('https://images.pexels.com/photos/136739/pexels-photo-136739.jpeg?auto=compress&cs=tinysrgb&w=600')">
+                    <img src="https://images.pexels.com/photos/136739/pexels-photo-136739.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                         alt="Componentes del sistema sensor">
+                    <div class="gallery-overlay">
+                        <p class="gallery-caption">Componentes del sistema sensor</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal('https://images.pexels.com/photos/100653/pexels-photo-100653.jpeg?auto=compress&cs=tinysrgb&w=600')">
+                    <img src="https://images.pexels.com/photos/100653/pexels-photo-100653.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                         alt="Instalación en diferentes tipos de bicicleta">
+                    <div class="gallery-overlay">
+                        <p class="gallery-caption">Instalación en diferentes tipos de bicicleta</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Imagen ampliada">
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-subtitle">
+                    ¿Interesado en nuestro producto? Ponte en contacto con nosotros
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-title">Información de Contacto</h3>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon email">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">Email</h4>
+                                <p class="contact-value">info@thevisionarybikesecurity.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon phone">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">Teléfono</h4>
+                                <p class="contact-value">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon location">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">Oficina</h4>
+                                <p class="contact-value">123 Tech Street, Innovation City, IC 12345</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3 class="form-title">Envíanos un mensaje</h3>
+                    
+                    <div id="success-message" class="success-message" style="display: none;">
+                        <i class="fas fa-check-circle success-icon"></i>
+                        <h4 class="success-title">¡Mensaje enviado!</h4>
+                        <p class="success-text">Te contactaremos pronto.</p>
+                    </div>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nombre completo</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre completo" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+1 (555) 123-4567">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="4" 
+                                      placeholder="Cuéntanos sobre tu interés en nuestro producto..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <i class="fas fa-bicycle"></i>
+                        </div>
+                        <span class="footer-logo-text">The Visionary BikeSecurity</span>
+                    </div>
+                    <p class="footer-description">
+                        Innovando en seguridad ciclística con tecnología de vanguardia.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fas fa-mobile-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about" class="footer-link">Acerca de</a></li>
+                        <li><a href="#team" class="footer-link">Equipo</a></li>
+                        <li><a href="#project" class="footer-link">Proyecto</a></li>
+                        <li><a href="#contact" class="footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Código QR de Contacto</h4>
+                    <div class="qr-container">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=BEGIN:VCARD%0AVERSION:3.0%0AFN:The%20Visionary%20BikeSecurity%0AORG:The%20Visionary%20BikeSecurity%0ATEL:+15551234567%0AEMAIL:info@thevisionarybikesecurity.com%0AURL:https://thevisionarybikesecurity.com%0AEND:VCARD" 
+                             alt="QR Code de contacto" class="qr-code">
+                    </div>
+                    <p class="qr-description">Escanea para guardar nuestro contacto</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">
+                        © 2025 The Visionary BikeSecurity. Todos los derechos reservados.
+                    </p>
+                    <p class="footer-tagline">
+                        Construido con tecnología avanzada y pasión por la seguridad
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
